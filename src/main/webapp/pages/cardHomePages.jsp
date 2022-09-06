@@ -84,7 +84,7 @@
                                              alt="Photo of sunset" style="padding: 5px; width: 100%">
                                     </div>
                                     <div class="modal-body">
-                                        ...
+
                                         <c:forEach items="${comments}" var="comm">
                                             <p>${comm}</p>
                                         </c:forEach>
@@ -125,10 +125,10 @@
                         </button>
                         <nav class="navbar bg-light">
                             <div class="container-fluid">
-                                <form role="search" action="/cardHomePages" method="post">
+                                <form action="/cardHomePages" method="post">
 
-                                    <input style="border: whitesmoke; width: 360px; " type="text" name="message"
-                                           placeholder="  Add a comment..." aria-label="Search">
+                                    <input style="border: whitesmoke; width: 360px; " type="text" name="comments"
+                                           placeholder="  Add a comment...">
                                     <button style="border: whitesmoke;  color: green; width: 100px">
                                         publish
                                     </button>
